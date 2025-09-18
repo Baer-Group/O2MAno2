@@ -1,0 +1,7 @@
+snpeff -v -dataDir /blue/baer/m.rifat/MA_lines/snpeff_data -configOption WBcel235.105.genome=Caenorhabditis_elegans WBcel235.105 /blue/baer/m.rifat/MA_lines/Mutations_CommonSites/dn_ds/E.bp.GVCFs.snp.3x.mutation.vcf > /blue/baer/m.rifat/MA_lines/Mutations_CommonSites/dn_ds/E.bp.GVCFs.snp.3x.mutation.ann.vcf 2> /blue/baer/m.rifat/MA_lines/Mutations_CommonSites/dn_ds/snpeff.log
+
+bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\t%INFO/ANN\n' O1.snps.ann.hdr.vcf.gz > O1.ANN.tsv
+bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\t%INFO/ANN\n' O2.snps.ann.hdr.vcf.gz > O2.ANN.tsv
+
+
+
