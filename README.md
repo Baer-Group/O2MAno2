@@ -1,6 +1,9 @@
 
 Workflow:
 
+
+Workflow:
+
 1.	s2.sh Gunzip to decompress fq.gz files.
  fastp to trim the adapters and the low-quality reads from the sample genome files.
 2.	samtools faidx to create. fa index of the reference genome WS292 (command line)
@@ -41,10 +44,18 @@ bamtools filter -isProperPair true to make sure all the read pairs are aligned a
 32.	fn.R To calculate False negatives and failure to recall. 
 33.	sim_plain.R To calculate the point estimates of the rates per generation/days with and without FP correction. 
 34.	sim_from_o1.R Testing the hypothesis of uniform mean.
+sim_from_o1_v2.R Testing the hypothesis of uniform mean(Updated version).
 35.	sd_seperate_o1o2.R Testing the hypothesis of uniform variance in o1 and o2. 
 36.	mismatch.sh . Diagnose the mismatched o1 lines. 
-37.	snpeff . Annotate the mutations, and their putative impacts. 
-38.	Annotation.R and add_line.R . Process the annotated vcf files and convert to csv file. 
+37.	snpeff . Annotate the mutations, and their putative impacts. (Download and building database command changed)
+38.	annotation.R and add_line.R . Process the annotated vcf files and convert to csv file.
+39.	ann.sh  . Generate tsv files from annotated vcf files.  
+40.	annotation_v2.R . Annotate genes from tsv files and update the annotation CSV file.
+41.	mutation_distribution_v2.R . Distribution of the mutations across the chromosomes(package used: readr). 
+42.	dn_ds.R . Used to convert o1 o2 csv to vcf to annotate and calculate dn/ds(package used: stringr, forcats). 
+43.	tsv.sh . To generate annotated tsv files from the previous steps.  
+44.	working_command.txt . Use the command from this text directly and change manually for two files in case tsv.sh doesn’t work.  
+45.	dn_ds_v2.R . To generate the dN/dS table from annotated tsv files. 
 
 
 
