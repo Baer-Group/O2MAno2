@@ -1,7 +1,3 @@
-
-Workflow:
-
-
 Workflow:
 
 1.	s2.sh Gunzip to decompress fq.gz files.
