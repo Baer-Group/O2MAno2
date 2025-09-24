@@ -2,7 +2,13 @@ Directory Description:
 
 
 Chromosome_distribution: Contains the location (Chromosome+Position) of all the mutations.
-O2MAno2 Codes: Contains all the codes used for genome assembly, variant calling, annotation and mutation rate & spectra. .
+
+Competitive_fitness: Contains the competitive fitness data and image guide. 
+
+Figures: Contains most of the important figures of the experiment. 
+
+O2MAno2 Codes: Contains all the codes used for genome assembly, variant calling, annotation and mutation rate & spectra. 
+
 Pymc_scripts: Contains all the codes used to analyze fitness data.
 dn_ds: Contains dN/dS analysis dataset and code. 
 merge_EG: Contains total counts of mutation per sample at different coverage (3X and 10x) (SNP/Indel) and regions (whole genome, mononucleotide repeat and non repeat)
