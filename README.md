@@ -10,7 +10,9 @@ Figures: Contains most of the important figures of the experiment.
 O2MAno2 Codes: Contains all the codes used for genome assembly, variant calling, annotation and mutation rate & spectra. 
 
 Pymc_scripts: Contains all the codes used to analyze fitness data.
+
 dn_ds: Contains dN/dS analysis dataset and code. 
+
 merge_EG: Contains total counts of mutation per sample at different coverage (3X and 10x) (SNP/Indel) and regions (whole genome, mononucleotide repeat and non repeat)
 
 
@@ -43,14 +45,12 @@ bamtools filter -isProperPair true to make sure all the read pairs are aligned a
 20.	mono.R split all the files into two groups: mono and non mono (package used: dplyr, vcfR). 
 21.	Order.R, to split all the files into two groups again, o1 and o2) (package used: dplyr)
 22.	indel.R and snp.R, to distribute the mutations into indel and snp spectra. Calculated total for each sample (package used: dplyr). 
-
 23.	3Xcover.sh, 10Xcover.sh, G3xcover.sh, G10xcover.sh using these four-custom made bash script to calculate the percentage of the total length covered by the MA genomes. 
 24.	cat.R to add coverage information and delete ancestors. 
 25.	merge_new.R Combines the snp and indel files. 
 26.	merge_EG.R Combines the E and G sublines in a single file. 
 27.	Indel_spectra.R Plots insertion and deletion spectra seperately. 
 28.	Irate_spectra.R Plots SNV and Indel spectra seperately. 
-29.	
 30.	Dummy_reference.R . Randomly inserted SNV and indels to generate a pseudo reference genome. (package used: GenomicRanges,IRanges,Biostrings)
 31.	GATK: FastaAlternateReferenceMaker. Pseudo-Reference genome created. (command line). 
 32.	fn.R To calculate False negatives and failure to recall. 
